@@ -106,13 +106,3 @@ hailo compiler rtmdet_int8.har   --output-dir output   --hw-arch hailo8
 - `README.md` → This file
 
 ---
-
-## 👨‍💻 Author
-
-Created by [Your Name] — feel free to open issues or suggestions!
-
----
-
-## 📜 License
-
-MIT License
