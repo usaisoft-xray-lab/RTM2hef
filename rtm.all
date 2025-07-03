@@ -1,0 +1,13 @@
+model_optimization_flavor(optimization_level=1, compression_level=1)
+post_quantization_optimization(finetune, policy=disabled)
+post_quantization_optimization(adaround,  policy=disabled)
+
+pre_quantization_optimization(global_avgpool_reduction,
+                              layers=rtmdet/avgpool1,
+                              division_factors=[4,4])
+                              
+                              
+pre_quantization_optimization(global_avgpool_reduction,
+                              layers=rtmdet/avgpool2,
+                              division_factors=[4,4])
+
