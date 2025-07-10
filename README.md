@@ -48,6 +48,13 @@ We use a calibration dataset in `.npy` format for INT8 optimization.
   - `rtm.alls` (provided)
 
 ---
+## Quick Run   
+For a quick run just keep all the files required and the onnx model in the same directory as the bash script *rtmdet2hef.sh* and run    
+
+```bash
+./rtmdet2hef.sh
+```
+
 
 ## 🔁 Workflow
 
