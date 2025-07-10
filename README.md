@@ -54,7 +54,7 @@ We use a calibration dataset in `.npy` format for INT8 optimization.
 ### 1. **Parsing the ONNX Model**
 
 ```bash
-hailo parser onnx rtmdet.onnx   --har-path rtmdet.har   --start-node input   --end-node /Concat_6 /Sigmoid   --tensor-shapes input=[1,3,640,640]   --hw-arch hailo8
+hailo parser onnx rtmdet.onnx --har-path rtmdet.har --start-node input --end-node /Concat_6 /Sigmoid --tensor-shapes input=[1,3,640,640] --hw-arch hailo8 --end-node-names "/bbox_head/Mul" "/bbox_head/Mul_1" "/bbox_head/Mul_2" "/bbox_head/rtm_cls.1/Conv" "/bbox_head/rtm_cls.2/Conv" "/bbox_head/rtm_cls.0/Conv"
 ```
 
 #### 🔹 Explanation:
